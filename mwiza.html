@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samuel ❤️ Mwiza</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+section{
+    padding:50px 20px;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size:45px;
+    margin-bottom:20px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:20px;
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button{
+    background:#ff1744;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    margin:20px;
+    box-shadow: 0 4px 15px rgba(255, 23, 68, 0.4);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#d50000;
+}
+
+/* Hero Selfie Image */
+.hero-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+}
+
+/* Hearts animation */
+.heart{
+    position:fixed;
+    bottom:-10px;
+    color:red;
+    animation:float 8s linear infinite;
+    z-index: 999;
+    pointer-events: none;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* Gallery */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.gallery img{
+    width:280px;
+    height:380px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.gallery-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Letter */
+#letter{
+    display:none;
+    background:white;
+    color:#333;
+    padding:40px 30px;
+    border-radius:20px;
+    max-width: 500px;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: left;
+    animation: fadeIn 1s ease;
+}
+
+#letter h3 {
+    text-align: center;
+    color: #ff1744;
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Reasons */
+#reason{
+    font-size:25px;
+    min-height:80px;
+    font-weight: 600;
+}
+
+/* Final */
+.final{
+    background:#ff1744;
+}
+
+.fade{
+    animation:fade 3s;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+#counter {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<section>
+<img src="6.jpg" alt="Samuel and Mwiza" class="hero-img">
+<h1>Samuel ❤️ Mwiza</h1>
+<p>
+Every love story is beautiful,<br>
+but ours is my favorite.
+</p>
+<button onclick="start()">Tap to Begin ❤️</button>
+</section>
+
+<section class="fade">
+<h2>Dear Mwiza...</h2>
+<p>
+This little corner of the internet belongs only to you ❤️
+</p>
+</section>
+
+<section>
+<h2>📖 Our Story</h2>
+<h3>17 October 2025 ❤️</h3>
+<p>
+On this day, two hearts found each other.<br><br>
+Since then, every smile, every conversation,
+and every memory has become a treasure.<br><br>
+Distance, time, and challenges only remind me
+how lucky I am to love you.
+</p>
+</section>
+
+<section>
+<h2>📷 Our Memories</h2>
+<div class="gallery">
+    <div class="gallery-card">
+        <img src="1.jpg" alt="White Coat Ceremony">
+        <div class="gallery-caption">White Coat Ceremony 🩺</div>
+    </div>
+    <div class="gallery-card">
+        <img src="2.jpg" alt="Looking sharp together">
+        <div class="gallery-caption">Dressed to Impress ✨</div>
+    </div>
+    <div class="gallery-card">
+        <img src="3.jpg" alt="Sweet studio moment">
+        <div class="gallery-caption">Pure Happiness 💕</div>
+    </div>
+     <div class="gallery-card">
+        <img src="4.jpg" alt="Sweet studio moment">
+        <div class="gallery-caption">Pure Happiness 💕</div>
+    </div>
+     <div class="gallery-card">
+        <img src="5.jpg" alt="Sweet studio moment">
+        <div class="gallery-caption">Pure Happiness 💕</div>
+    </div>
+</div>
+</section>
+
+<section>
+<h2>💌 Unlock My Heart</h2>
+<input id="password" type="password"
+placeholder="Enter anniversary password"
+style="padding:15px;border-radius:20px;border:none; text-align:center; font-size: 16px; outline: none; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<br>
+<button onclick="unlock()">Unlock ❤️</button>
+
+<div id="letter">
+<h3>Dear Mwiza,</h3>
+<div style="text-align: center; margin-bottom: 20px;">
+    <img src="7.jpg" style="width: 100%; max-width: 250px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+</div
+<p>
+Thank you for coming into my life.<br><br>
+Loving you has become one of the greatest blessings
+I have ever known.<br><br>
+Even on ordinary days, you make life extraordinary.<br><br>
+I pray that one day we will look back at this website
+together and smile, knowing our story only became
+more beautiful.<br><br>
+I love you today, tomorrow, and every day after.<br><br>
+<span style="display:block; text-align:right; font-weight:bold; color:#ff1744;">— Samuel ❤️</span>
+</p>
+</div>
+</section>
+
+<section>
+<h2>⏳ Together Since</h2>
+<h3 id="counter">Calculating time...</h3>
+</section>
+
+<section>
+<h2>💖 100 Reasons I Love You</h2>
+<p id="reason">
+Press the button ❤️
+</p>
+<button onclick="reason()">Show Me ❤️</button>
+</section>
+
+<section class="final">
+<h1>Mwiza ❤️</h1>
+<h2>
+Will you keep making beautiful memories with me?
+</h2>
+<button onclick="yes()">❤️ YES ❤️</button>
+<h2 id="answer" style="margin-top: 20px;"></h2>
+</section>
+
+<section>
+<h2>🎵 Our Song</h2>
+<a href="https://https://youtu.be/p-pfPYWjUBY?si=iH2MFn9wUC85v60e" target="_blank">
+<button>
+Play "I Think They Call This Love" 🎶
+</button>
+</a>
+</section>
+
+<script>
+function start(){
+alert("Welcome to our little love story ❤️");
+}
+
+// password
+function unlock(){
+let pass=document.getElementById("password").value;
+if(pass=="17102025"){
+document.getElementById("letter").style.display="block";
+}
+else{
+alert("Wrong password ❤️ Hint: Your anniversary date (DDMMYYYY)");
+}
+}
+
+// counter
+let startDate=new Date("October 17, 2025 00:00:00");
+setInterval(()=>{
+let now=new Date();
+let diff=now-startDate;
+let days=Math.floor(diff/(1000*60*60*24));
+let hours=Math.floor(diff/(1000*60*60)%24);
+let mins=Math.floor(diff/(1000*60)%60);
+let secs=Math.floor(diff/1000%60);
+
+document.getElementById("counter").innerHTML=
+days+" days ❤️ "+
+hours+" hours ❤️ "+
+mins+" minutes ❤️ "+
+secs+" seconds";
+},1000);
+
+// reasons
+let reasons=[
+"Your smile brightens my day ❤️",
+"You believe in me ❤️",
+"You make ordinary moments unforgettable ❤️",
+"Your kindness inspires me ❤️",
+"You are uniquely you ❤️",
+"Your love makes me happy ❤️",
+"You are my favorite person ❤️"
+];
+
+function reason(){
+let r=reasons[Math.floor(Math.random()*reasons.length)];
+document.getElementById("reason").innerHTML=r;
+}
+
+// yes button
+function yes(){
+document.getElementById("answer").innerHTML=
+"I LOVE YOU SO MUCH MY MWIZA";
+}
+
+// floating hearts
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"%";
+heart.style.fontSize=(20+Math.random()*30)+"px";
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+},500);
+</script>
+
+</body>
+</html>
